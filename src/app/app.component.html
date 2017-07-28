@@ -16,6 +16,10 @@
   <p> Here's the user object </p>
   <pre> {{ user | json }} </pre>
 
+  <div class="container">
+    <app-quiz></app-quiz>
+  </div>
+
   <p *ngIf="privateData"> Here's some data fetched from a protected API </p>
   <pre> {{ privateData | json }} </pre>
 
@@ -24,7 +28,3 @@
 </div>
 
 <p class="error"> {{ error }} </p>
-
-<div class="container">
-  <app-quiz></app-quiz>
-</div>
